@@ -1,49 +1,147 @@
-<!--Main Navigation-->
-<header>
+<!-- SideNav slide-out button -->
+<a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse">
+    <i class="mdi mdi-view-sequential"></i>
+</a>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-        <a class="navbar-brand" href="#">
-            <strong>Skeleton</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                        Signup
+<!-- Sidebar navigation -->
+<div id="slide-out" class="side-nav fixed">
+    <ul class="custom-scrollbar">
+        <!-- Logo -->
+        <li>
+            <div class="logo-wrapper waves-light">
+                <a href="#">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
+                </a>
+            </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social-->
+        <li>
+            <ul class="social">
+                <li>
+                    <a href="#" class="icons-sm fb-ic">
+                        <i class="fa fa-facebook"> </i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Login
+                <li>
+                    <a href="#" class="icons-sm pin-ic">
+                        <i class="fa fa-pinterest"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icons-sm gplus-ic">
+                        <i class="fa fa-google-plus"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icons-sm tw-ic">
+                        <i class="fa fa-twitter"> </i>
                     </a>
                 </li>
             </ul>
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <i class="fa fa-facebook"></i>
+        </li>
+        <!--/Social-->
+        <!--Search Form-->
+        <li>
+            <form class="search-form" role="search">
+                <div class="form-group md-form mt-0 pt-1 waves-light">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+        </li>
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header waves-effect arrow-r">
+                        <i class="fa fa-chevron-right"></i> Submit blog
+                        <i class="fa fa-angle-down rotate-icon"></i>
                     </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a href="#" class="waves-effect">Submit listing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Registration form</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <i class="fa fa-twitter"></i>
+                <li>
+                    <a class="collapsible-header waves-effect arrow-r">
+                        <i class="fa fa-hand-pointer-o"></i> Instruction
+                        <i class="fa fa-angle-down rotate-icon"></i>
                     </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a href="#" class="waves-effect">For bloggers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">For authors</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <i class="fa fa-instagram"></i>
+                <li>
+                    <a class="collapsible-header waves-effect arrow-r">
+                        <i class="fa fa-eye"></i> About
+                        <i class="fa fa-angle-down rotate-icon"></i>
                     </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a href="#" class="waves-effect">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Monthly meetings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapsible-header waves-effect arrow-r">
+                        <i class="fa fa-envelope-o"></i> Contact me
+                        <i class="fa fa-angle-down rotate-icon"></i>
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a href="#" class="waves-effect">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Write a message</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Write a message</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Write a message</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">Write a message</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </nav>
+        </li>
+        <!--/. Side navigation links -->
+    </ul>
+</div>
+<!--/. Sidebar navigation -->
 
-</header>
-<!--Main Navigation-->
 
 
 <router-outlet>

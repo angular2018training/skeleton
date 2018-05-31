@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
 declare var WOW;
+declare var $;
 
 @Component({
   selector: 'app-auth',
@@ -12,6 +13,8 @@ export class AuthComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // this.renderer.addClass(document.body, 'creative-lp');
     new WOW().init();
+    // SideNav Initialization
+    $('.button-collapse').sideNav();
   }
 
   ngOnDestroy(): void {
